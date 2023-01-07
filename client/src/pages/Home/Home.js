@@ -8,6 +8,18 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import { ReactComponent as Star } from '../../icons/star.svg';
+import { ReactComponent as Users } from '../../icons/users-alt.svg';
+import { ReactComponent as Briefcase } from '../../icons/briefcase.svg';
+import { ReactComponent as Resources } from '../../icons/resources.svg';
+import { ReactComponent as Comments } from '../../icons/comments.svg';
+import { ReactComponent as Video } from '../../icons/video-camera-alt.svg';
+import { ReactComponent as Stats } from '../../icons/stats.svg';
+import { ReactComponent as World } from '../../icons/world.svg';
+import { ReactComponent as Copyright } from '../../icons/copyright.svg';
+import { ReactComponent as Arrow } from '../../icons/angle-small-right.svg';
+
+
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -58,15 +70,69 @@ const Home = (props) => {
               <h2>All Branding Agency Services</h2>
               <p>Let our Squad of 250K+ experts from around the world help you launch your brand!</p>
               <div className={styles.cardWrapper}>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                  <section>
+                    <h3><Star className={styles.iconStyle} />  Premium Domains</h3>
+                    <p>Curated brandable domains avaliable for immediate purchase</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
+                <div>
+                  <section>
+                    <h3><Users className={styles.iconStyle} />  Naming Contests</h3>
+                    <p>Crowdsourced Name Ideas from our creative community</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
+                <div>
+                  <section>
+                    <h3><Briefcase className={styles.iconStyle} />  Managed Contests</h3>
+                    <p>Full Agency-level Experience, led by Branding Consultant</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
+                <div>
+                  <section>
+                    <h3><Resources className={styles.iconStyle} />  Logo Contests</h3>
+                    <p>Professional logo design contests</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
+                <div>
+                  <section>
+                    <h3><Comments className={styles.iconStyle} />  Tagline Contests</h3>
+                    <p>Taglines, slogan, and strapline ideas from our creative community</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
+                <div>
+                  <section>
+                    <h3><Video className={styles.iconStyle} />  Video Creation</h3>
+                    <p>Get perfectly branded videos optimized for results</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
+                <div>
+                  <section>
+                    <h3><Stats className={styles.iconStyle} />  Audience Testing</h3>
+                    <p>Fast, effective naming and branding research with consumer test panels</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
+                <div>
+                  <section>
+                    <h3><World className={styles.iconStyle} />  Trademark Research</h3>
+                    <p>Comprehensive Trademark Research across 100+ countries</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
+                <div>
+                  <section>
+                    <h3><Copyright className={styles.iconStyle} />  Trademark Filing</h3>
+                  <p>Trademark filing service by Licensed Trademark attorneys</p>
+                  </section>
+                  <button className={styles.btnArrow}><Arrow className={styles.iconStyle} /></button>
+                </div>
               </div>
             </div>
             <div className={styles.container__description}>

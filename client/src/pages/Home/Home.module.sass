@@ -412,6 +412,7 @@
 
 
 .blueWrapper
+  box-sizing: border-box
   background-color: #2B62EC
   color: white
   display: flex
@@ -444,7 +445,12 @@
     font-weight: 400
     text-align: center
     margin-bottom: 15px
-  
+
+
+@mixin fontStyle
+  font-family: Raleway, sans-serif
+  color: #46484C
+
 
 .cardWrapper
   background-color: #2B62EC
@@ -456,10 +462,34 @@
   padding-bottom: 100px
 
   div
+    display: flex
+    flex-direction: row
+    box-sizing: border-box
     background-color: #FAFAFA
     width: 335px
     height: 135px
     margin: 15px
-    border-radius: 5px 
+    padding: 30px 15px
+    border-radius: 5px
+    
+    h3
+      @include fontStyle
+      font-size: 20px
+      font-weight: 550
+      margin-bottom: 18px
+
+    p
+      @include fontStyle
+      font-size: 16px
+      text-align: left
+      line-height: 24px    
 
 
+.iconStyle
+  width: 16px
+  height: 16px
+  fill: #46484C
+
+.btnArrow
+  border: none
+  background-color: #FAFAFA
