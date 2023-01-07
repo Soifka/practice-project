@@ -54,6 +54,21 @@ const Home = (props) => {
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
             </div>
+            <div className={styles.blueWrapper}>
+              <h2>All Branding Agency Services</h2>
+              <p>Let our Squad of 250K+ experts from around the world help you launch your brand!</p>
+              <div className={styles.cardWrapper}>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
             <div className={styles.container__description}>
               <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>
               <div className={styles.cardContainer}>
